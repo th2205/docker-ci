@@ -47,6 +47,10 @@ function TodoListCard() {
         [items],
     );
 
+    React.useEffect(() => {
+        console.log('update');
+    },[]);
+
     if (items === null) return 'Loading...';
 
     return (
